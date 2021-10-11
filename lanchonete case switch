@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+cout<<"Cardápio ***\n 100 – Hambúrguer – R$5,50 \n 101 – Cachorro-quente – R$4,50 \n 102 – Milk-shake – R$7,00 \n 103 – Pizza brotinho – R$8,00 \n 104 — Cheeseburguer – R$8,50 \n 500- para fim";
+int ham, cac, mil, piz, che, cod;
+float qdtham=0, qdtcac=0, qdtmil=0, qdtpiz=0, qdtche=0;
+float conta=0;
+
+while(cod!=500)
+{
+cout<<"Informe o código do seu pedido:";
+cin>>cod;
+
+switch(cod)
+{case 100:
+	cout<<"informe a quantidade do item";
+	cin>>qdtham;
+	break;
+case 101:
+	cout<<"informe a quantidade do item";
+	cin>>qdtcac;
+	break;
+case 102:
+	cout<<"informe a quantidade do item";
+	cin>>qdtmil;
+	break;
+case 103:
+	cout<<"informe a quantidade do item";
+	cin>>qdtpiz;
+	break;
+case 104:
+	cout<<"informe a quantidade do item";
+	cin>>qdtche;
+	break;
+default:
+	cod=500;
+}
+}
+conta = (qdtham*5.5)+(qdtcac*4.5)+(qdtmil*7)+(qdtpiz*8)+(qdtche*8.5);
+cout<< "valor da conta = "<<conta;
+}
