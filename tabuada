@@ -1,0 +1,18 @@
+#include <iostream>
+#include <locale>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+setlocale(LC_ALL, "ptb");
+int num, resultado, numero;
+num=1;
+cout<<"escreve número para tabuada :";
+cin>>numero;
+while(resultado<10*numero)
+{
+resultado=num*numero;
+cout <<resultado<<"\n";
+num+=1;
+}
+}
