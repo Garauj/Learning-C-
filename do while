@@ -1,0 +1,32 @@
+#include <iostream>
+#include <locale>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+setlocale(LC_ALL, "ptb");
+int idade;
+cout<<"escreva a idade ";
+cin>> idade;
+do
+{
+
+if(idade<7)
+{cout<<"fora da faixa etária \n";
+}
+else if(idade<=12)
+{cout<<"categoria junior \n";
+}
+else if(idade<=17)
+{cout<<"categoria juvenil \n";
+}
+else if(idade<=49)
+{cout<<"categoria adulto \n";
+}
+else
+{ cout<<"categoria Sênior \n";
+}
+cout<<"escreva a idade \n";
+cin>> idade;
+}while (idade!=-1);
+}
