@@ -1,0 +1,15 @@
+#include <iostream>
+#include <locale>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+setlocale(LC_ALL, "ptb");
+float aresta, areaquad, areacubo;
+cout <<"tamanho da aresta";
+cin>>aresta;
+areaquad = aresta*aresta;
+areacubo = aresta*aresta*aresta;
+cout<<areaquad<<"area   "<<areacubo<<"volume";
+system ("pause");
+}
