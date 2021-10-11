@@ -1,0 +1,30 @@
+#include <iostream>
+#include <locale>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+setlocale(LC_ALL, "ptb");
+int idade;
+bool invalido=false;
+char* vida;
+cout<<" escreva a idade ";
+cin>>idade;
+switch (idade)
+{case 1:
+	vida="bebe";
+	break;
+case 2:
+	vida = "bebe2";
+	break;
+case 3:
+	vida="bebe3";
+	break;
+	default:
+		cout<<"idade inválida";
+		invalido=true;
+}
+if(!invalido)
+cout<<" a vida do bebe é "<<vida;		
+
+}
