@@ -1,0 +1,30 @@
+#include <iostream>
+#include <locale>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+setlocale(LC_ALL, "ptb");
+int mat[3][4];
+int lin=0,col=0, divisor, contador=0;
+cout<<"defina divisor: ";
+cin>>divisor;
+for(lin=0;lin<3;lin++)
+{for(col=0;col<4;col++)
+{
+	mat[lin][col]=(4*lin+col);
+	}
+}
+lin=0;
+col=0;
+for(lin=0;lin<3;lin++)
+{for(col=0;col<4;col++)
+{
+	if(mat[lin][col]%divisor==0)
+	{contador++;
+	}
+	}
+	cout<<"\n";
+}
+cout<<"o número de múltiplos de "<<divisor<<" é "<<contador;
+}
