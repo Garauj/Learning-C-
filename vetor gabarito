@@ -1,0 +1,29 @@
+#include <iostream>
+#include <locale>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+setlocale(LC_ALL, "ptb");
+char gab[5], prova[5];
+int cont=0,acertos=0;
+while(cont<5)
+{cout<<"informe gabarito ";
+cin>>gab[cont];
+cont++;
+}
+cont=0;
+while(cont<5)
+{cout<<"informe resposta ";
+cin>>prova[cont];
+cont++;
+}
+cont=0;
+while(cont<5)
+{if(gab[cont]==prova[cont])
+{acertos++;
+}
+cont++;
+}
+cout<<"o número de acertos é "<<acertos;
+}
