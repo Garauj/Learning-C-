@@ -1,0 +1,61 @@
+#include <iostream>
+#include <locale>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+setlocale(LC_ALL, "ptb");
+int mat1[2][2], mat2[2][2],mat3[2][2];
+int lin=0,col=0;
+lin=0;
+col=0;
+for(lin=0;lin<2;lin++)
+{for(col=0;col<2;col++)
+{
+	mat1[lin][col]=(5);
+	}
+}
+
+for(lin=0;lin<2;lin++)
+{for(col=0;col<2;col++)
+{
+	mat2[lin][col]=(2);
+	}
+}
+cout<<mat1[0][0]<<"\n";
+cout<<mat2[0][0]<<"\n";
+
+for(lin=0;lin<2;lin++)
+{for(col=0;col<2;col++)
+{
+if(lin==col)
+{mat3[lin][col]=mat1[lin][col];
+}
+	}
+}
+
+
+for(lin=0;lin<2;lin++)
+{for(col=0;col<2;col++)
+{
+if(lin==col)
+{mat1[lin][col]=mat2[lin][col];
+}
+	}
+}
+
+
+for(lin=0;lin<2;lin++)
+{for(col=0;col<2;col++)
+{
+if(lin==col)
+{mat2[lin][col]=mat3[lin][col];
+}
+	}
+}
+
+cout<<mat1[0][0]<<"\n";
+cout<<mat1[1][1]<<"\n";
+cout<<mat2[0][0]<<"\n";
+cout<<mat2[1][1]<<"\n";
+}
