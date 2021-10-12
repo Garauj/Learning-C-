@@ -1,0 +1,25 @@
+ #include <iostream>
+ using namespace std;
+ int main()
+ {
+   int num, contador,linha;
+   cout <<"Qual o número de linhas do triangulo ";
+   cin >>num;
+  linha =0;
+   while(contador<=num)
+   {
+	    while(linha<contador)
+	    {
+		
+        cout<<"*";
+		
+		linha++;
+	}
+	
+	cout<<"\n";
+	linha=0;
+	contador++;
+}
+  }
+
+ 
