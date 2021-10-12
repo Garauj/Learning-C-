@@ -1,0 +1,16 @@
+ #include <iostream>
+ using namespace std;
+ int main()
+ {
+   int num=0, contador=0, temp;
+
+   for (contador=0;contador<10;contador++)
+   {
+   	cout<<" forneça um número: ";
+   	cin>> temp;
+   	if(temp%3==0)
+   	{num++;
+	   }
+   }
+ cout<<"foram fornecidos "<<num<<" múltiplos de 3";
+ }
