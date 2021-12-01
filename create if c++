@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+float nascimento, anoatual, idade;
+cout << "informe nascimento : ";
+cin >> nascimento;
+cout << "informe ano atual : ";
+cin >> anoatual;
+idade=(anoatual-nascimento);
+cout << "idade: " << idade;
+if(idade>16);
+{cout<< "pode votar";
+}
+}
