@@ -1,0 +1,34 @@
+#include <iostream>
+#include <locale>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+setlocale(LC_ALL, "ptb");
+ int op;
+ cout <<"------------------------------------\n";
+
+  cout <<"Escolha a operação matemática: \n";
+
+  cout <<"1 - Adição\n";
+
+  cout <<"2 - Subtração\n";
+
+  cout <<"3 - Divisão\n";
+
+  cout <<"4 - Multiplicação\n";
+
+  cout <<"Opção: ";
+
+  cin >>op;
+if(op==1)
+{cout<<"você escolheu 1";
+}
+else if(op==2)
+{cout<<"você escolheu 2";
+}
+else
+{cout<<"você escolheu outro";
+}
+}
+
