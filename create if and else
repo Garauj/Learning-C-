@@ -1,0 +1,26 @@
+#include <iostream>
+#include <locale>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+setlocale(LC_ALL, "ptb");
+{
+float nascimento, anoatual, idade;
+cout << "informe nascimento : ";
+cin >> nascimento;
+cout << "informe ano atual : ";
+cin >> anoatual;
+idade=(anoatual-nascimento);
+cout << "idade: " << idade;
+if (idade>=16)
+{
+cout <<"Você já pode votar!";
+}
+else
+{
+cout <<"Você ainda não pode votar!";
+}
+}
+
+}
